@@ -1,0 +1,25 @@
+div.buffer-30
+
+div.row
+  div.col-md-3
+  div.col-md-6
+    div.well.well-lg
+      h2.no-margin-top.text-success log in
+      div.buffer-30
+
+      form.form-horizontal(role='form', ng-submit='login()')
+
+        div.form-group
+          label.col-md-5.control-label.text-danger(for='input-email') email
+          div.col-md-7
+            input#input-email.form-control(type='text', ng-model='formData.email')
+
+        div.form-group
+          label.col-md-5.control-label.text-danger(for='password') password
+          div.col-md-7
+            input#password.form-control(type='password', ng-model='formData.password')
+
+        div.buffer-30
+        button.btn.btn-success.btn-lg.btn-block(type='submit') log in
+
+  div.col-md-3

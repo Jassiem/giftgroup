@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username":"node_user",
+    "password":"node",
+    "database":"gifthub_db",
+    "dialect": "postgres",
+    "host": "localhost",
+    "port": 5432
+  },
+  "test":{
+    "username":"root",
+    "password":null,
+    "database":"database_test",
+    "host":"127.0.0.1"
+  },
+  "production":{
+    "username":"cjvkenxwgopaaf",
+    "password": "v9ild_F09WOVUQXEFZIAU18ztd",
+    "database":"d8jo4f4ehg8aea",
+    "host":"ec2-54-225-121-179.compute-1.amazonaws.com",
+    "dialect": "postgres",
+    "port": 5432
+  }
+}

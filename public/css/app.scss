@@ -1,0 +1,40 @@
+/* bootstrap addons */
+.navbar-bevel {
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.1, #FFFFFF),
+		color-stop(0.9, #F5F5F5)
+	);
+	background-image: -o-linear-gradient(bottom, #FFFFFF 10%, #F5F5F5 90%);
+	background-image: -moz-linear-gradient(bottom, #FFFFFF 10%, #F5F5F5 90%);
+	background-image: -webkit-linear-gradient(bottom, #FFFFFF 10%, #F5F5F5 90%);
+	background-image: -ms-linear-gradient(bottom, #FFFFFF 10%, #F5F5F5 90%);
+	background-image: linear-gradient(to bottom, #FFFFFF 10%, #F5F5F5 90%);
+	border-color: #eaeaea !important;
+}
+
+/* app css stylesheet */
+.no-margin-top {
+  margin-top: 0px;
+}
+.buffer-30 {
+  height: 30px;
+}
+.footer {
+  ul {
+    li {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+.site-title {
+	.red {
+		color: #a94442;
+	}
+	.green {
+		color: #3c763d;
+	}
+}

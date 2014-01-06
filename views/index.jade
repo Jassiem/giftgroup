@@ -1,0 +1,31 @@
+extends layout
+
+block body
+  div.site-title
+    h1
+      span.red g
+      span.green i
+      span.red f
+      span.green t
+      &nbsp;
+      span.green g
+      span.red r
+      span.green o
+      span.red u
+      span.green p
+
+  nav.navbar.navbar-bevel(role='navigation')
+    div.navbar-inner
+      a.navbar-brand.text-success test
+
+  div(ui-view)
+
+  div.buffer-30
+
+  nav.navbar.footer
+    hr
+    ul.list-inline.text-center.text-muted
+      li home
+      li about
+      li privacy
+      li contact

@@ -1,0 +1,25 @@
+/* bootstrap addons */
+.navbar-bevel {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.1, white), color-stop(0.9, whitesmoke));
+  background-image: -o-linear-gradient(bottom, white 10%, whitesmoke 90%);
+  background-image: -moz-linear-gradient(bottom, white 10%, whitesmoke 90%);
+  background-image: -webkit-linear-gradient(bottom, white 10%, whitesmoke 90%);
+  background-image: -ms-linear-gradient(bottom, white 10%, whitesmoke 90%);
+  background-image: linear-gradient(to bottom, white 10%, whitesmoke 90%);
+  border-color: #eaeaea !important; }
+
+/* app css stylesheet */
+.no-margin-top {
+  margin-top: 0px; }
+
+.buffer-30 {
+  height: 30px; }
+
+.footer ul li {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.site-title .red {
+  color: #a94442; }
+.site-title .green {
+  color: #3c763d; }
