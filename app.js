@@ -3,6 +3,7 @@
  */
 
 var routes = require('./routes'),
+  auth = require('./routes/auth'),
   ajax = require('./routes/ajax'),
   express = require('express');
 
@@ -33,10 +34,10 @@ app.configure('production', function(){
 // Routes
 app.get('/', routes.index());
 app.get('/partials/:name', routes.partials);
-app.get('/logout', ajax.logout());
+app.get('/logout', auth.logout());
 
 // posts
-app.post('/login', ajax.login());
+app.post('/login', auth.login());
 
 // redirect all others to the index (HTML5 history)
 app.get('*', routes.index());
