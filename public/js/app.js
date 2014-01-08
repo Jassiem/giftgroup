@@ -24,6 +24,11 @@ myApp.config(function($locationProvider, $httpProvider, $stateProvider, $urlRout
             url: '/login',
             templateUrl: 'partials/login',
             controller: 'LoginCtrl'
+        })
+        .state('dashboard', {
+            url: '/dashboard',
+            templateUrl: 'partials/dashboard',
+            controller: 'DashboardCtrl'
         });
     // .state('state1.list', {
     //     url: "/list",

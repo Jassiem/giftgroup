@@ -19,6 +19,8 @@ div.row
           div.col-md-7
             input#password.form-control(type='password', ng-model='formData.password')
 
+        div.text-danger.text-center {{errorMessage}}
+
         div.buffer-30
         button.btn.btn-success.btn-lg.btn-block(type='submit') log in
 

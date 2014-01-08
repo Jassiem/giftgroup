@@ -6,5 +6,19 @@ exports.index = function() {
 
 exports.partials = function (req, res) {
   var name = req.params.name;
-  res.render('partials/' + name);
+  console.log(name);
+  if (name === 'login' || name === 'home' || name === 'signup') {
+    res.render('partials/' + name);
+  } else {
+    // require authentication
+    if (req.session.user) {
+      console.log('accepted');
+      res.render('partials/' + name);
+    } else {
+      console.log('denied');
+      req.session.error = 'Access denied!';
+      res.redirect('partials/login');
+    }
+  }
+
 };

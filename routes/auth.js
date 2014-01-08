@@ -35,3 +35,15 @@ exports.logout = function() {
     });
   };
 };
+
+// ensure logged in
+exports.restrict = function() {
+  return function(req, res){
+    if (req.session.user) {
+      next();
+    } else {
+      req.session.error = 'Access denied!';
+      res.redirect('/login');
+    }
+  };
+};
